@@ -1,0 +1,47 @@
+.carosal{
+    width: 100vw;
+    height: 83vh;
+}
+
+.parent {
+    width: 100%; 
+    height: 100%;/* Set the width of the parent div */
+    overflow-x: auto;
+    background-color: red; 
+    display: flex;/* Allow horizontal overflow with a scrollbar */
+    overflow: hidden;
+  }
+  
+  .childcontainer {
+    background-color: green;
+    width: 100%;
+    height:100%;
+    white-space: nowrap;
+    transition: all 1s ease-in-out;
+       ; /* Prevent child divs from wrapping to the next line */
+  }
+  
+  .child {
+    display: inline-block; /* Display child divs in a row */
+    width: 100%; /* Set the width of each child div */
+    height:100%; /* Set the height of each child div (adjust as needed) */
+    background-color: lightblue; /* Just for visualization */
+     /* Add margin between child divs (adjust as needed) */
+
+     img{
+        width:100%;
+        height:100%;
+      }
+  }
+
+
+  @media screen and (max-width: 500px) {
+.parent{
+    height: 60vh;
+}
+.carosal{
+  height: 60vh;
+}
+
+  }
+ 

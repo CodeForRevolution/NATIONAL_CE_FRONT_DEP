@@ -1,0 +1,101 @@
+.product{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../static/img/products/productBackground.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: 50% 42px;
+    background-color:black;
+    >h2{
+        color:black;
+        font-family: 'Kaushan Script', cursive;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    gap: 8px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.eachProduct{
+    width: 20%;
+    min-width:180px;
+    min-height: 350px;
+    height:33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.45);
+
+   
+    img{
+        width:98%;
+        height:95%;
+      
+    }
+
+    .desc{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255,255,255);
+        color: black;
+    
+    }
+}
+
+@media screen and (max-width:766px) {
+    .product{
+        height: 300vh;
+    }
+    .container{
+        width: 90%;
+        height: 95%;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .eachProduct{
+        width: 53%;
+        min-width: 400px;
+        height: 22%;
+        img{
+            width:100%;
+            height: 90%;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .product{
+        height: 300vh;
+    }
+    .container{
+        width: 95%;
+        height: 98%;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .eachProduct{
+        width:80%;
+        min-width:300px;
+        height: 22%;
+        img{
+            width:100%;
+            height: 90%;
+        }
+    }
+
+}
