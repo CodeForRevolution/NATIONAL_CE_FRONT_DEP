@@ -1,11 +1,10 @@
 import React from "react";
 import style from "./Carosal.module.scss";
-import img1 from "../../static/img/carosal/1.png";
-import img2 from "../../static/img/carosal/2.png";
+import img1 from "../../static/img/News/speechS.jpg";
+import img2 from "../../static/img/News/dancingS.jpg";
 import img3 from "../../static/img/carosal/3.jpg";
-import img4 from "../../static/img/carosal/4.png";
-import img5 from "../../static/img/carosal/5.jpg";
-import img6 from "../../static/img/carosal/6.jpg";
+import img4 from "../../static/img/News/speach2.jpg";
+
 const Carosal = () => {
 
 var i=0;
